@@ -1,0 +1,47 @@
+{
+  "name": "webpack-project-template",
+  "version": "1.0.0",
+  "description": "A simple and reusable Webpack starter template for JavaScript projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "lint": "eslint src",
+    "format": "prettier --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasminMcodes/webpack-project-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YasminMcodes/webpack-project-template/issues"
+  },
+  "homepage": "https://github.com/YasminMcodes/webpack-project-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.2",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "file-loader": "^6.2.0",
+    "globals": "^17.0.0",
+    "html-webpack-plugin": "^5.6.5",
+    "prettier": "^3.7.4",
+    "style-loader": "^4.0.0",
+    "typescript-eslint": "^8.52.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
