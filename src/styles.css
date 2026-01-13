@@ -1,4 +1,61 @@
 body {
   font-family: Arial, sans-serif;
   padding: 2rem;
+  background-image: url('../imagesAndIcons/bgImage.jpg');
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  max-width: 70vw;
+  min-height: 70vh;
+  margin: 0 auto;
+  background-color: rgba(170, 192, 227, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.searchContainer {
+  max-width: 70vw;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.searchInput {
+  max-width: 60%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.searchButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3e609b;
+  color: white;
+  cursor: pointer;
+}
+.searchButton:hover {
+  background-color: #486fae;
+}
+.useLocation {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3e609b;
+  color: white;
+  cursor: pointer;
+}
+.useLocation:hover {
+  background-color: #486fae;
 }
