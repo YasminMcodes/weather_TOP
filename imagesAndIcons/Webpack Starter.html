@@ -1,7 +1,12 @@
-body {
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Webpack Starter</title>
+  <script defer="" src="./Webpack Starter_files/bundle.js"></script><style>body {
   font-family: Arial, sans-serif;
   padding: 2rem;
-  background-image: url('../imagesAndIcons/bgImage.jpg');
+  background-image: url(http://localhost:8080/c1eeb4d5e0b7ddec4573.jpg);
 }
 .mainContainer {
   display: flex;
@@ -12,6 +17,7 @@ body {
 }
 
 .searchContainer {
+  max-width: 70vw;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -66,56 +72,19 @@ body {
   align-items: center;
 }
 .weather-card {
-  background: rgba(220, 213, 213, 0.6);
+  background: rgba(241, 226, 226, 0.6);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  width: 320px;
-  text-align: center;
-  color: #333;
-  margin-right: 10px;
+  max-width: 400px;
+  width: 100%;
 }
-.weather-header .city {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.weather-header .description {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-.weather-main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-}
+
 .weather-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem;
-}
-.weather-icon {
-  width: 100px; 
-  height: 100px;
-  margin-bottom: 0.5rem;
-}
-.feelslike {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #555;
-}
-.weather-details  {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-  margin-top: 1.5rem;
-  color: #333;
-  background: rgba(220, 213, 213, 0.6);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
 }
 
 .weather-header h2 {
@@ -140,18 +109,37 @@ body {
   justify-content: space-around;
   font-size: 0.95rem;
 }
-.weather-details .detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.9rem;
-  color:#333;
-}
+
 .error-message {
+  margin-top: 1rem;
   color: #b91c1c;
   background: #fee2e2;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  margin-top: 1rem;
-  display: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  display: none; /* show only when error occurs */
 }
+</style></head>
+  <body>
+    <div class="searchContainer">
+      <input type="text" class="searchInput" placeholder="🔍 Location...">
+      <button class="searchButton">Search</button>
+      <button class="useLocation">My Location 📍</button>
+    </div>
+    <div class="container">
+  <div class="weather-card">
+    <div class="weather-header"> 
+  <h2 class="city"> Rome </h2>;
+  <img class="weather-icon" src="./Webpack Starter_files/partly-cloudy-day.png" alt="Partially cloudy">
+  </div>
+  <div class="weather-main">
+  <p class="temperature"> 🌡️Temperature: 12.3°C </p>
+  <p class="feelslike"> 🤗Feels Like: 12.3°C </p></div> 🌥️Conditions: Partially cloudy <p></p>
+  </div>
+  div class="weather-details"&gt;
+  <p class="humidity"> 💧Humidity: 75.3% </p>
+  <p class="windspeed"> 🌬️Windspeed: 7.5 km/h </p>
+  
+  </div>
+  
+
+</body></html>

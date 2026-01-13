@@ -1,10 +1,11 @@
 import './styles.css';
 import { getWeather } from './weather.js';
-import { displayWeather, renderError } from './displayWeather.js';
+import { displayWeather } from './displayWeather.js';
 import { coordsToCity } from './cityName.js';
 
 const button = document.querySelector('.useLocation');
 const SearchButton = document.querySelector('.searchButton');
+const searchInput = document.querySelector('.searchInput');
 
 button.addEventListener('click', () => {
   navigator.geolocation.getCurrentPosition(
@@ -27,8 +28,9 @@ SearchButton.addEventListener('click', async () => {
     const weather = await getWeather({ city });
     displayWeather(weather);
   } catch (error) {
-    renderError(error.message);
+    displayWeather(null, error.message);
   }
+  searchInput.value = '';
 });
 const weather = await getWeather();
 displayWeather(weather);
